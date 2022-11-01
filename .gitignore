@@ -1,0 +1,5 @@
+.pytest_cache
+/assets
+geckodriver.log
+report.html
+__pycache__

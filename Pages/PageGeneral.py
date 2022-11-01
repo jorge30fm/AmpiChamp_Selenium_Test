@@ -28,3 +28,7 @@ class BasePage:
         """checks if html element is enabled in the page, returns boolean"""
         element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locator))
         return bool(element)
+    def get_element(self, by_locator):
+        """find element by specified locator"""
+        element = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(by_locator))
+        return element
