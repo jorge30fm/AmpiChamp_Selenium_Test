@@ -27,3 +27,9 @@ class Test_AppForm(BaseTest):
     def test_populate_elegibility_check_k1(self):
         self.appForm = AppForm(self.driver)
         self.appForm.fill_eligibility_check_k1()
+    def test_populate_crime_history(self):
+        self.appForm = AppForm(self.driver)
+        self.appForm.fill_crime_history()
+    def test_populate_general_info(self):
+        self.appForm = AppForm(self.driver)
+        self.appForm.fill_general_information()
