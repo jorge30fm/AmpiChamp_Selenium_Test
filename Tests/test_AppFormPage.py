@@ -18,3 +18,12 @@ class Test_AppForm(BaseTest):
         self.appForm = AppForm(self.driver)
         flag = self.appForm.first_name_input_exists()
         assert flag
+    def test_populate_preliminary_info(self):
+        self.appForm = AppForm(self.driver)
+        self.appForm.fill_preliminary_info()
+    def test_populate_elegibility_check_common_criteria(self):
+        self.appForm = AppForm(self.driver)
+        self.appForm.fill_eligibility_check_common_criteria()
+    def test_populate_elegibility_check_k1(self):
+        self.appForm = AppForm(self.driver)
+        self.appForm.fill_eligibility_check_k1()
