@@ -13,4 +13,3 @@ def init_driver(request):
     #     web_driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
     request.cls.driver = web_driver
     yield
-    web_driver.close()

@@ -1,0 +1,10 @@
+Sequence,ID,action,input
+1120,lbl_129_4-ElChck-CitMarr-000_Yes,click,
+1020,input_129_4-PrelInf-PrelInf-020,type,Jackson
+1030,input_129_4-PrelInf-PrelInf-030,type,Smith
+1050,input_129_4-PrelInf-PrelInf-050,clear,petersmith@gmail.com
+1060,input_129_4-PrelInf-PrelInf-060,type,1234567891
+1090,input_129_4-PrelInf-PrelInf-090,type,Martha
+1100,input_129_4-PrelInf-PrelInf-100,type,Carmen
+1110,input_129_4-PrelInf-PrelInf-110,type,Fuentes
+1010,input_129_4-PrelInf-PrelInf-010,type,Peter
