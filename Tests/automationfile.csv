@@ -1,10 +1,36 @@
-Sequence,ID,action,input
-1120,lbl_129_4-ElChck-CitMarr-000_Yes,click,
-1020,input_129_4-PrelInf-PrelInf-020,type,Jackson
-1030,input_129_4-PrelInf-PrelInf-030,type,Smith
-1050,input_129_4-PrelInf-PrelInf-050,clear,petersmith@gmail.com
-1060,input_129_4-PrelInf-PrelInf-060,type,1234567891
-1090,input_129_4-PrelInf-PrelInf-090,type,Martha
-1100,input_129_4-PrelInf-PrelInf-100,type,Carmen
-1110,input_129_4-PrelInf-PrelInf-110,type,Fuentes
-1010,input_129_4-PrelInf-PrelInf-010,type,Peter
+Sequence,Locator Type,Locator,action,input,Screenshot,Wait
+1010,ID,input_129_4-PrelInf-PrelInf-010,type,Peter,,
+1020,ID,input_129_4-PrelInf-PrelInf-020,type,Jackson,,
+1030,ID,input_129_4-PrelInf-PrelInf-030,type,Smith,,
+1040,ID,input_129_4-PrelInf-PrelInf-050,clear,null,,
+1050,ID,input_129_4-PrelInf-PrelInf-050,type,petersmith@gmail.com,,3
+1060,ID,input_129_4-PrelInf-PrelInf-060,type,1234567891,,3
+1070,ID,input_129_4-PrelInf-PrelInf-090,type,Martha,,3
+1080,ID,input_129_4-PrelInf-PrelInf-100,type,Carmen,,3
+1090,ID,input_129_4-PrelInf-PrelInf-110,type,Fuentes,,3
+1100,CLASS,btn-ampichap,click,null,,3
+1110,ID,lbl_129_4-ElChck-CitMarr-002_Yes,click,null,,3
+1120,ID,lbl_129_4-ElChck-CitMarr-010_No,click,null,,1
+1130,CLASS,btn-ampichap,click,null,,3
+1140,ID,lbl_129_4-ElChck-K1-002_Yes,click,null,,3
+1150,ID,lbl_129_4-ElChck-K1-010_Yes,click,null,,3
+1160,ID,lbl_129_4-ElChck-K1-020_Yes,click,null,,3
+# This is a comment,,,,,,3
+1170,CLASS,btn-ampichap,click,null,,3
+1180,ID,lbl_129_4-ElChck-CrimHist-002_No,click,null,,
+1190,CLASS,btn-ampichap,click,null,,
+1200,ID,lbl_129_4-PetInf-Gen-010_Male,click,null,,
+1210,ID,input_129_4-PetInf-Gen-020,type,1234567,,
+1220,ID,input_129_4-PetInf-Gen-030,type,123456798123,,
+1230,ID,input_129_4-PetInf-Gen-040,type,123456789,,
+1240,CLASS,btn-ampichap,click,null,,
+,,,,,,
+1250,ID,input_129_4-PetInf-Per-010,type,6,,
+1260,ID,input_129_4-PetInf-Per-020,type,2,,
+1270,ID,input_129_4-PetInf-Per-030,type,182,,
+1280,ID,lbl_129_4-PetInf-Per-040_Asian,click,null,,
+1290,ID,lbl_129_4-PetInf-Per-050_Yes,click,null,,
+1300,ID,lbl_129_4-PetInf-Per-070_Brown,click,null,,
+1310,CLASS,btn-ampichap,click,null,,
+1320,ID,input_129_4-PetInf-Bth-005,type,11/11/1980,,
+1330,ID,input_129_4-PetInf-Bth-010,select,United States,,
