@@ -9,9 +9,10 @@ from sys import exit
 
 
 class PageActions:
-    """Parent class of all pages. Contains all the generic methods and utilities"""
+    """Parent class of all pages. Contains all the generic methods and utilities to perform browser actions"""
     logger = get_logger(__name__)
 
+    # info necessary to log
     EMAIL_EL = (By.ID, "loginOffcanvasFormLoginEmail")
     PASSWORD_EL = (By.ID, "loginOffcanvasFormLoginPassword")
     LOGIN_BTN_EL = (By.ID, "login_nav_right")
@@ -38,7 +39,7 @@ class PageActions:
         return check_success
 
     def do_click(self, by_locator):
-        """Click element on a page based on specified locator"""
+        """Click element on a page based on specified locator and log the result"""
         locator_type, locator_identifier = by_locator
         try:
             WebDriverWait(self.driver, 10).until(
@@ -52,7 +53,7 @@ class PageActions:
                         locator_identifier + ' - CLICK')
 
     def do_send_keys(self, by_locator, text):
-        """send keys/text to specified input field"""
+        """send keys/text to specified input field and log the result"""
         locator_type, locator_identifier = by_locator
         try:
             WebDriverWait(self.driver, 10).until(
@@ -66,7 +67,7 @@ class PageActions:
                          locator_identifier + ': ' + text + '- ENTER TEXT')
 
     def select_single_item(self, by_locator, selection):
-        '''Selects item based on its value attribute from a dropdown list'''
+        '''Selects item based on its value attribute from a dropdown list and logs the result'''
         locator_type, locator_identifier = by_locator
         try:
             element = WebDriverWait(self.driver, 10).until(
@@ -83,7 +84,7 @@ class PageActions:
             self.logger.info('SUCCESS! ' + selection + ' selected - SELECT DROPDOWN OPTION')
 
     def clear_field(self, by_locator):
-        """clears text on input field"""
+        """clears text on input field and logs the result"""
         locator_type, locator_identifier = by_locator
         try:
             WebDriverWait(self.driver, 10).until(
@@ -100,7 +101,7 @@ class PageActions:
                         locator_identifier + ' - CLEAR TEXT')
 
     def is_visible(self, by_locator):
-        """checks if html element is enabled in the page, returns boolean"""
+        """checks if html element is enabled in the page, returns boolean and logs the result"""
         locator_type, locator_identifier = by_locator
         try:
             element = WebDriverWait(self.driver, 10).until(
@@ -115,7 +116,7 @@ class PageActions:
             return bool(element)
 
     def get_element(self, by_locator):
-        """find element by specified locator"""
+        """find element by specified locator and log the result"""
         locator_type, locator_identifier = by_locator
         try:
             element = WebDriverWait(self.driver, 10).until(
@@ -130,7 +131,7 @@ class PageActions:
             return element
 
     def get_element_text(self, by_locator):
-        """get text from html based on specified locator"""
+        """get text from html based on specified locator and log the result"""
         locator_type, locator_identifier = by_locator
         try:
             element = WebDriverWait(self.driver, 10).until(

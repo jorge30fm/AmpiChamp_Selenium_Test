@@ -8,6 +8,8 @@ from webdriver_manager.firefox import GeckoDriverManager
 
 @pytest.fixture(params=["chrome"], scope="class")
 def init_driver(request):
+    '''initializes selenium driver for chrome'''
+    # TODO: set up other browser web drivers (firefox, safari, edge)
     web_driver = webdriver.Chrome(
         service=ChromeService(ChromeDriverManager().install()))
     # if request.param =="firefox":
