@@ -1,6 +1,7 @@
 from config.setup_logger import get_logger
 import pandas as pd
-import time
+import time, datetime
+from utils.util import create_screenshot_directory
 from selenium.webdriver.common.by import By
 from utils.PageActions import PageActions
 
@@ -21,8 +22,7 @@ class AutomationFileReader(PageActions):
             "select": self.select_single_item,
             "get text": self.get_element_text
         }
-
-
+        screenshot_folder_path = create_screenshot_directory()
         for i, row in self.df.iterrows():
             self.logger.info('SN: ' + str(row['Sequence']))
             locator_type = {
@@ -38,6 +38,11 @@ class AutomationFileReader(PageActions):
             else:
                 actions[row['action']](locator, row['input'])
 
+            if row['Screenshot'] == 'Yes':
+                file_name = str(row['Sequence']) + '-' + datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S' + '.jpeg')
+                file_path = screenshot_folder_path + '/' + file_name
+                print(file_path)
+                self.driver.save_screenshot(file_path)
             # waits 1 second before moving on to next row unless specified to wait longer in the dfg
             if pd.isnull(row['Wait']):
                 time.sleep(0)
