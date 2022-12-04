@@ -8,9 +8,6 @@ from utils.PageActions import PageActions
 class AutomationFileReader(PageActions):
     '''Contains methods to read csv file and iterate throwgh its rows to perform the automation'''
 
-    #set up the log file
-    logger = get_logger(__name__)
-
     def read_file(self, filename):
         '''Read csv file, sort by sequence number in ascending order and drop any empty rows'''
         self.df = pd.read_csv(filename, skip_blank_lines=True, comment='#').sort_values('Sequence', ascending=True)

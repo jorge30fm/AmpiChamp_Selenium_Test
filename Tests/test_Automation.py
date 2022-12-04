@@ -1,15 +1,20 @@
 
+import os
 from selenium.webdriver.common.by import By
-
 from test_general import BaseTest
 from utils.PageActions import PageActions
 from utils.Automation_File_Reader import AutomationFileReader
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class Test_Form_Automation(BaseTest):
     def test_navigate_to_i129f(self):
         '''test if automation script can log in and navigate to I-129F'''
         self.pageActions =  PageActions(self.driver)  # type: ignore
-        form_desc= self.pageActions.navigate_to_i129f("jorge30fm@gmail.com","Test123!")
+        email = os.environ.get("EMAIL")
+        password = os.environ.get("PASSWORD")
+        form_desc= self.pageActions.navigate_to_i129f(email, password)
         assert form_desc
 
     def test_file_reader(self):

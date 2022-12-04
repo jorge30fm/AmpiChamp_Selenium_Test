@@ -1,0 +1,15 @@
+12/04/2022 04:46:59 PM: INFO : SUCCESS! xpath - //*[@id="stickyBlockStartPoint"]/div/div/div[2]/div[2]/button - CLICK
+12/04/2022 04:47:00 PM: INFO : SUCCESS! id - loginOffcanvasFormLoginEmail: jorge30fm@gmail.com- ENTER TEXT
+12/04/2022 04:47:00 PM: INFO : SUCCESS! id - loginOffcanvasFormLoginPassword: Test123!- ENTER TEXT
+12/04/2022 04:47:00 PM: INFO : SUCCESS! id - login_nav_right - CLICK
+12/04/2022 04:47:04 PM: INFO : SUCCESS! xpath - //*[@id="stickyBlockStartPoint"]/div/div/div[2]/div[2]/button - CLICK
+12/04/2022 04:47:07 PM: INFO : SUCCESS! id - part_full_text_111- CHECK VISIBLE
+12/04/2022 04:47:07 PM: INFO : LOGIN SUCCESSFUL
+12/04/2022 04:47:08 PM: INFO : SN: 1010.0
+12/04/2022 04:47:08 PM: INFO : SUCCESS! id - input_129_4-PrelInf-PrelInf-010: Peter- ENTER TEXT
+12/04/2022 04:47:08 PM: INFO : SN: 1020.0
+12/04/2022 04:47:08 PM: INFO : SUCCESS! id - input_129_4-PrelInf-PrelInf-020: Jackson- ENTER TEXT
+12/04/2022 04:47:08 PM: INFO : SN: 1030.0
+12/04/2022 04:47:09 PM: INFO : SUCCESS! id - input_129_4-PrelInf-PrelInf-030: Smith- ENTER TEXT
+12/04/2022 04:47:09 PM: INFO : SN: 1040.0
+12/04/2022 04:47:09 PM: INFO : SUCCESS! id - input_129_4-PrelInf-PrelInf-050 - CLEAR TEXT
