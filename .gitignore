@@ -3,3 +3,5 @@
 geckodriver.log
 report.html
 __pycache__
+/.vscode
+

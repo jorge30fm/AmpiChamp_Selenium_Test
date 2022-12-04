@@ -1,0 +1,2 @@
+import pytest
+from Tests.test_Automation import Test_Form_Automation
