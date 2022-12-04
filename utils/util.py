@@ -7,3 +7,4 @@ def create_screenshot_directory():
     os.makedirs(directory_path)
     print(directory_path)
     return directory_path
+
